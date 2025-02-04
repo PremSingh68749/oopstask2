@@ -17,9 +17,10 @@ This project demonstrates class inheritance in TypeScript with a simple example 
 ## How to Run
 
 1. Clone or download the repository.
-2. run command : npm i 
-3. compile the project with : tsc
-4. run project with : npm run start 
+2. ```bash 
+    npm i 
+3. ```bash
+    tsc
+4.```bash
+      npm run start 
 
-   ```bash
-   npm install -g typescript ts-node
