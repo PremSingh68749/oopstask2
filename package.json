@@ -1,0 +1,12 @@
+{
+  "name": "oops",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/app.js"
+  },
+  "dependencies": {
+    "typescript": "^5.7.3",
+      "@types/node": "^22.13.1"
+  }
+}

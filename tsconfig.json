@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",                 // Use ES Modules syntax
+    "target": "ESNext",                 // Output latest ECMAScript
+    "outDir": "./dist",                 // Output directory for compiled JS files
+    "esModuleInterop": true,            // Allow default imports for CommonJS modules
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*", "src/app.ts", "src/utils.ts"],              // Include your TypeScript files
+  "exclude": ["node_modules"]
+}
