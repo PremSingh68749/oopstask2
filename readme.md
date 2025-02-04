@@ -21,6 +21,6 @@ This project demonstrates class inheritance in TypeScript with a simple example 
     npm i 
 3. ```bash
     tsc
-4.```bash
+4. ```bash
       npm run start 
 
