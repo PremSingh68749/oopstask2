@@ -81,6 +81,53 @@ console.log('subClass Method:', testStudent.getDetails());
 //calling methods from super class 
 console.log('superClass Method:', { name: testStudent.getName(), age: testStudent.getAge(), dob: testStudent.getDob(), });
 
+interface Emp {
+    department: String;
+    salary: Number;
+    getSalary(): Number;
 
+}
+
+// Interface for return type checking of getdetails method
+interface empDetailsType {
+    name: String;
+    age: Number;
+    dob: Date;
+    department: String;
+    salary: Number;
+
+}
+
+//multiple inheritance using interface 
+
+class Employee extends Person implements Emp {
+
+    department: String;
+    salary: Number;
+    constructor(name: String, age: Number, dob: String, department: String, salary: Number) {
+        super(name, age, dob);
+        this.department = department;
+        this.salary = salary;
+    }
+
+    public getSalary(): Number {
+        return this.salary;
+    }
+
+    //Overriding the getDetails method to include department and salary in the returned object.    
+
+    public getDetails(): empDetailsType {
+
+        return { ...super.getDetails(), department: this.department, salary: this.getSalary() }
+
+    }
+
+
+}
+
+
+const testEmp: Employee = new Employee("jhon", 22, "03-05-2002", "software development", 450000);
+
+console.log('multiple inheritance method:', testEmp.getDetails());
 
 export { };
