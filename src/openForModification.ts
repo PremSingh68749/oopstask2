@@ -1,4 +1,4 @@
-// earlier verision of this code was just having email serice now sms service is added additionally by inherting from different class; please                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       see the documentation   for this                                                                                                                                                                           
+// earlier verision of this code was just having email serice now sms service is added additionally by inherting from different class;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     see the documentation   for this                                                                                                                                                                           
 
 class EmailService {
     public sendEmail(email: string, message: string): void {
@@ -54,4 +54,4 @@ class EmailService {
     );
   };
   
-  main();
+  main();                                                                                                                                                                                                           
