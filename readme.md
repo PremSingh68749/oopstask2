@@ -22,6 +22,7 @@ Ensure you have the following installed:
    ```sh
    git clone <repository-url>
    cd oopstask2-solidtypescript
+   git checkout solidtypescript
    ```
 2. Install dependencies:
    ```sh
