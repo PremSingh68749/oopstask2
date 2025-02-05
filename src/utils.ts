@@ -16,3 +16,17 @@ export const filteredData = async (data: Post[]): Promise<FilteredPost[]> => {
 
     return temp;
 };
+
+
+export class GrayLog{
+    public saveLog(logobject:object):void{
+        console.log(logobject)
+    }
+}
+
+export class RedisLog{
+    public sendLog(logobject:String):void{
+        console.log(logobject)
+    }
+
+}

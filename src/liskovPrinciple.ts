@@ -44,14 +44,14 @@ abstract class CustomError {
     }
   }
   
-  const errorDecorator = (customError: CustomError) => {
+  const errorDecorator1 = (customError: CustomError) => {
     customError.createErrorMessage();
     customError.logError();
   };
   
   const main1 = () => {
     const dbError = new DBError(new Error("DB err1"));
-    errorDecorator(dbError);
+    errorDecorator1(dbError);
   };
   
   main1();

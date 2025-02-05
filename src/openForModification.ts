@@ -44,7 +44,7 @@ class EmailService {
     }
   }
   
-  const main = () => {
+  const main2 = () => {
     const orderNotificationService = new OrderNotificationService();
     orderNotificationService.sendOrderNotification(
       "hello@example.com",
@@ -54,4 +54,4 @@ class EmailService {
     );
   };
   
-  main();                                                                                                                                                                                                           
+  main2();                                                                                                                                                                                                           
